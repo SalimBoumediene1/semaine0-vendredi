@@ -5,9 +5,12 @@ while nbEmail <= 50
     tabEmail << "jean.dupont.#{"%.2i" %nbEmail}@email.fr"
     nbEmail += 1
 end
+i = 0
 
-for i in 0..tabEmail.size
-    next if i % 2 == 0
-puts tabEmail[i]
-i += 2
+loop do
+    puts tabEmail[i+1]
+    i += 2
+    if i == 50
+        break
+    end
 end
